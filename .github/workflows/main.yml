@@ -6,7 +6,7 @@ on:
 
 jobs: 
   deploy:
-    runs-on: debian-latest
+    runs-on: self-hosted
     steps:
     - name: cd
       run: cd /var/www/reeper.buzz/html/ProjetCloud
