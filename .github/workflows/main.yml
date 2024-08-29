@@ -1,0 +1,12 @@
+name: Deploiement auto Serveur
+
+on: 
+  push:
+    branches: main
+
+jobs: 
+  deploy:
+    runs-on: self-hosted
+    steps:
+    - name: pull
+      run: git -C "/var/www/reeper.buzz/html/ProjetCloud" pull origin
