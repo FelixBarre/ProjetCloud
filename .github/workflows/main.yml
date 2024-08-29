@@ -8,7 +8,5 @@ jobs:
   deploy:
     runs-on: self-hosted
     steps:
-    - name: cd
-      run: cd /var/www/reeper.buzz/html/ProjetCloud
     - name: pull
-      run: git pull origin
+      run: git -C "/var/www/reeper.buzz/html/ProjetCloud" pull origin
