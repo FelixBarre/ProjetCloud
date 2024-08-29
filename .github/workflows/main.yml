@@ -8,10 +8,7 @@ jobs:
   deploy:
     runs-on: debian-latest
     steps:
-    - name: Install dependencies
-      run: npm install
-      
-    - name: Build the project
-      run: npm run build
+    - name: cd
+      run: cd /var/www/reeper.buzz/html/ProjetCloud
     - name: pull
-      run: git pull origin main
+      run: git pull origin
