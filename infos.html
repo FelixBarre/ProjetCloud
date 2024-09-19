@@ -4,15 +4,23 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Infos</title>
-  <link rel="stylesheet" href="css/style.css">
   <style>
-    body {
+    .bg-aqua {
       background-color: aqua;
     }
   </style>
 </head>
-<body>
+<body class="bg-aqua">
   <h1>Bienvenue sur la page info</h1>
   <p>Ceci est un paragraphe</p>
+
+  <div id="monDiv">
+    Cliquez ici
+  </div>
+  <script>
+    document.getElementById('monDiv').addEventListener('click', function () {
+      document.getElementsByTagName('body')[0].classList.toggle('bg-aqua');
+    });
+  </script>
 </body>
 </html>
